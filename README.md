@@ -26,11 +26,7 @@
 
 Если вы по каким-то причинам не можете этого сделать, то необходимый минимум установленного ПО примерно такой:
 - Рекомендуется использовать LuaLaTeX (XeLaTeX не проверялся)
-- Установленный пакет Beamer
-- Пакет polyglossia
-- Пакет microtype
-- Пакет fontspec
-- Пакет unicode-math
+- Установленные пакеты: beamer, polyglossia, microtype, fontspec, unicode-math, setspace
 - Установленные (желательно через систему пакетов LaTeX) шрифты:
   - Inter (основной)
   - IBM Plex Mono (моноширинный)
