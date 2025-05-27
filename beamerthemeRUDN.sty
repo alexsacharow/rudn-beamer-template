@@ -1,0 +1,40 @@
+\ProvidesPackage{beamerthemeRUDN}
+
+\mode<presentation>
+\uselanguage{Russian}
+\languagepath{Russian}
+
+\usecolortheme{RUDNColors}
+\useinnertheme{circles}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+
+\DeclareOptionBeamer{minimal}{
+    \setbeamertemplate{frametitle}
+    {
+        \nointerlineskip
+        \begin{beamercolorbox}[sep=0.3cm,ht=27pt,wd=\paperwidth]{frametitle}
+            \vbox{}\vskip-2ex%
+            \strut\insertframetitle\strut
+            \vskip-0.8ex%
+        \end{beamercolorbox}
+    }
+    \logo{\includegraphics[width=2cm]{./img/rudn_logo.png}}
+}
+
+\ProcessOptionsBeamer
+
+% Найстройка шрифтов
+\usepackage{fontspec}
+\usepackage[math-style=french]{unicode-math}
+\setmainfont{Inter}
+\setsansfont{Inter}
+\setmonofont[Scale=MatchLowercase]{IBM Plex Mono}
+\setmathfont[Scale=MatchLowercase]{Concrete Math}
+\usepackage{microtype}
+\usepackage{setspace}
+\onehalfspacing
+
+% Это уберает символы навигации внизу слайда
+\setbeamertemplate{navigation symbols}{}
+
+\mode<all>
