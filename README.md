@@ -42,7 +42,7 @@
 
 После выполнения установки, создайте свой файл с презентацией и скомпилируйте его командой:
 ```shell
-lualatex --interaction=nonstopmode <название_вашего_файла.tex>
+lualatex --interaction=nonstopmode название_вашего_файла.tex
 ```
 
 > [!WARNING]
