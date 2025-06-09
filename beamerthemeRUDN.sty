@@ -14,27 +14,34 @@
         \nointerlineskip
         \begin{beamercolorbox}[sep=0.3cm,ht=27pt,wd=\paperwidth]{frametitle}
             \vbox{}\vskip-2ex%
-            \strut\insertframetitle\strut
-            \vskip-0.8ex%
+            \strut\insertframetitle\strut \hfill {\normalfont \insertframenumber\,/\,\inserttotalframenumber}
+            %% \strut\insertframetitle\strut
+           \vskip-0.8ex%
         \end{beamercolorbox}
     }
     \logo{\includegraphics[width=2cm]{./img/rudn_logo.png}}
 }
+
 
 \ProcessOptionsBeamer
 
 % Найстройка шрифтов
 \usepackage{fontspec}
 \usepackage[math-style=french]{unicode-math}
-\setmainfont{Inter}
-\setsansfont{Inter}
+\setmainfont{Roboto}
+\setsansfont{Roboto}
 \setmonofont[Scale=MatchLowercase]{IBM Plex Mono}
 \setmathfont[Scale=MatchLowercase]{Concrete Math}
+\setmathrm{cmunorm.otf}[
+  Scale=MatchLowercase,
+  BoldFont = cmunobx.otf ,
+  ItalicFont = cmunoti.otf ,
+  BoldItalicFont = cmunobi.otf ]
 \usepackage{microtype}
 \usepackage{setspace}
 \onehalfspacing
 
-% Это уберает символы навигации внизу слайда
+% Это убирает символы навигации внизу слайда
 \setbeamertemplate{navigation symbols}{}
 
 \mode<all>
