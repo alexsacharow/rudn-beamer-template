@@ -28,7 +28,7 @@
 - Рекомендуется использовать LuaLaTeX (XeLaTeX не проверялся)
 - Установленные пакеты: beamer, polyglossia, microtype, fontspec, unicode-math, setspace
 - Установленные (желательно через систему пакетов LaTeX) шрифты:
-  - Inter (основной)
+  - Roboto (основной)
   - IBM Plex Mono (моноширинный)
   - Concrete Math (математический)
 
